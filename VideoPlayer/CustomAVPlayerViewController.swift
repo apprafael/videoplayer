@@ -46,7 +46,7 @@ class CustomAVPlayerViewController: AVPlayerViewController {
         locationManager?.startUpdatingLocation()
     }
     
-    func startMonitoring(location: CLLocationCoordinate2D) {
+    private func startMonitoring(location: CLLocationCoordinate2D) {
         if userLocation != nil { return }
         userLocation = location
         let geofenceRegion = CLCircularRegion(center: location,
