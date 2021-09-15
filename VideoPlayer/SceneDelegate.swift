@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowsScene = (scene as? UIWindowScene), let viewController =  CustomAVPlayerFactory.getAVPlayer() else { return }
+        guard let windowsScene = (scene as? UIWindowScene), let viewController =  VideoPlayerFactory.getViewController() else { return }
         let window = UIWindow(windowScene: windowsScene)
         self.window = window
         let navigationController = UINavigationController(rootViewController: viewController)

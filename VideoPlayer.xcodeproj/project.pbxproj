@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2675B0C426E178A200FD3522 /* CustomAVPlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2675B0C326E178A200FD3522 /* CustomAVPlayerFactory.swift */; };
+		26036C4A26F222B200B3397E /* VideoPlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26036C4326F222B200B3397E /* VideoPlayerFactory.swift */; };
+		26036C4B26F222B200B3397E /* VideoPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26036C4426F222B200B3397E /* VideoPlayerPresenter.swift */; };
+		26036C4E26F222B200B3397E /* VideoPlayerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26036C4726F222B200B3397E /* VideoPlayerModels.swift */; };
+		26036C4F26F222B200B3397E /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26036C4826F222B200B3397E /* VideoPlayerViewController.swift */; };
+		26036C5026F222B200B3397E /* VideoPlayerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26036C4926F222B200B3397E /* VideoPlayerInteractor.swift */; };
 		26DC828B26DFF30A009635F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC828A26DFF30A009635F5 /* AppDelegate.swift */; };
 		26DC828D26DFF30A009635F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC828C26DFF30A009635F5 /* SceneDelegate.swift */; };
 		26DC829426DFF30B009635F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DC829326DFF30B009635F5 /* Assets.xcassets */; };
 		26DC829726DFF30B009635F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DC829526DFF30B009635F5 /* LaunchScreen.storyboard */; };
 		26DC829F26E00511009635F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC829E26E00511009635F5 /* Constants.swift */; };
-		26DC82AC26E005D3009635F5 /* CustomAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC82A526E005D3009635F5 /* CustomAVPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2675B0C326E178A200FD3522 /* CustomAVPlayerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayerFactory.swift; sourceTree = "<group>"; };
+		26036C4326F222B200B3397E /* VideoPlayerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerFactory.swift; sourceTree = "<group>"; };
+		26036C4426F222B200B3397E /* VideoPlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerPresenter.swift; sourceTree = "<group>"; };
+		26036C4726F222B200B3397E /* VideoPlayerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerModels.swift; sourceTree = "<group>"; };
+		26036C4826F222B200B3397E /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		26036C4926F222B200B3397E /* VideoPlayerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerInteractor.swift; sourceTree = "<group>"; };
 		26DC828726DFF30A009635F5 /* VideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DC828A26DFF30A009635F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26DC828C26DFF30A009635F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +32,6 @@
 		26DC829626DFF30B009635F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DC829826DFF30B009635F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26DC829E26E00511009635F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		26DC82A526E005D3009635F5 /* CustomAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26036C4226F2227D00B3397E /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				26036C4326F222B200B3397E /* VideoPlayerFactory.swift */,
+				26036C4426F222B200B3397E /* VideoPlayerPresenter.swift */,
+				26036C4726F222B200B3397E /* VideoPlayerModels.swift */,
+				26036C4826F222B200B3397E /* VideoPlayerViewController.swift */,
+				26036C4926F222B200B3397E /* VideoPlayerInteractor.swift */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
 		26DC827E26DFF30A009635F5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +76,8 @@
 		26DC828926DFF30A009635F5 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				26036C4226F2227D00B3397E /* scene */,
 				26DC829E26E00511009635F5 /* Constants.swift */,
-				2675B0C326E178A200FD3522 /* CustomAVPlayerFactory.swift */,
-				26DC82A526E005D3009635F5 /* CustomAVPlayerViewController.swift */,
 				26DC828A26DFF30A009635F5 /* AppDelegate.swift */,
 				26DC828C26DFF30A009635F5 /* SceneDelegate.swift */,
 				26DC829326DFF30B009635F5 /* Assets.xcassets */,
@@ -139,11 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC82AC26E005D3009635F5 /* CustomAVPlayerViewController.swift in Sources */,
+				26036C4A26F222B200B3397E /* VideoPlayerFactory.swift in Sources */,
 				26DC828B26DFF30A009635F5 /* AppDelegate.swift in Sources */,
 				26DC828D26DFF30A009635F5 /* SceneDelegate.swift in Sources */,
+				26036C5026F222B200B3397E /* VideoPlayerInteractor.swift in Sources */,
 				26DC829F26E00511009635F5 /* Constants.swift in Sources */,
-				2675B0C426E178A200FD3522 /* CustomAVPlayerFactory.swift in Sources */,
+				26036C4E26F222B200B3397E /* VideoPlayerModels.swift in Sources */,
+				26036C4F26F222B200B3397E /* VideoPlayerViewController.swift in Sources */,
+				26036C4B26F222B200B3397E /* VideoPlayerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
