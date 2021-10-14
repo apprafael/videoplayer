@@ -1,5 +1,5 @@
 # videoplayer
-This app can be controlled by motion, This app was written in Swift 5 and demonstrating Clean Swift Architecture
+A video player that can be controlled by motion, This app was written in Swift 5 and demonstrating Clean Swift Architecture
 
 ## Description
 1. It loads and plays a video file after launch. Video file (http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingO nBullrun.mp4)
